@@ -41,7 +41,7 @@
 							<img src="./img/logo.png" alt="logo">
 						</a>
 					</div>
-					<!-- /Logo -->
+					<!-- /Logo  -->
 
 					<!-- Mobile toggle -->
 					<button class="navbar-toggle">
