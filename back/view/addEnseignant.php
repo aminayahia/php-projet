@@ -10,6 +10,9 @@ if(isset($_POST['add_enseignant'])){
 include "../classes/Departement.php";
 $d = new Departement();
 $listeD = $d->listDepartement();
+
+// by default, error messages are empty
+$valid=$fnameErr=$lnameErr=$emailErr=$passErr=$cpassErr='';
 ?>
 
 <!DOCTYPE html>
@@ -224,6 +227,10 @@ $listeD = $d->listDepartement();
                                 <label class="col-sm-2 col-form-label">Nom</label>
                                 <div class="col-sm-10">
                                   <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrer nom">
+                                  <p class="err-msg">
+    
+<?php if($fnameErr!=1){ echo $fnameErr; }?>
+           </p>
                                 </div>
                               </div>
                               <div class="form-group row">

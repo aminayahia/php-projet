@@ -224,48 +224,41 @@ if(isset($_POST['edit_etudiant'])){
                           <!-- statustic and process end -->
                           <div class="col-sm-12">
                             <form method="post">
-                              <input type="hidden" name="id" value="
-																														<?php echo $etudiant['id'] ?>">
+                              <input type="hidden" name="id" value="<?php echo $etudiant['id'] ?>">
                               <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Nom</label>
                                 <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="nom" value="
-																																	<?php echo $etudiant['nom'] ?>" name="nom">
+                                  <input type="text" class="form-control" id="nom" value="<?php echo $etudiant['nom'] ?>" name="nom">
                                 </div>
                               </div>
                               <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Prénom</label>
                                 <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="nom" value="
-																																		<?php echo $etudiant['prenom'] ?>" name="prenom">
+                                  <input type="text" class="form-control" id="nom" value="<?php echo $etudiant['prenom'] ?>" name="prenom">
                                 </div>
                               </div>
                               <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Email</label>
                                 <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="nom" value="
-																																			<?php echo $etudiant['email'] ?>" name="email">
+                                  <input type="text" class="form-control" id="nom" value="<?php echo $etudiant['email'] ?>" name="email">
                                 </div>
                               </div>
                               <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">date de naissance</label>
                                 <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="nom" value="
-																																				<?php echo $etudiant['dateN'] ?>" name="dateN" disabled>
+                                  <input type="text" class="form-control" id="nom" value="<?php echo $etudiant['dateN'] ?>" name="dateN" disabled>
                                 </div>
                               </div>
                               <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Class</label>
                                 <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="nom" value="
-																																					<?php echo $etudiant['id_class'] ?>" name="class" placeholder="Entrer class">
+                                  <input type="text" class="form-control" id="nom" value="<?php echo $etudiant['id'] ?>" name="class" placeholder="Entrer class">
                                 </div>
                               </div>
                               <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">CIN</label>
                                 <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="nom" value="
-																																						<?php echo $etudiant['cin'] ?>" name="cin" disabled>
+                                  <input type="text" class="form-control" id="nom" value="<?php echo $etudiant['cin'] ?>" name="cin" disabled>
                                 </div>
                               </div>
                               <button class="btn btn-primary btn-sm btn-round" type="submit" name="edit_etudiant">Update</button>

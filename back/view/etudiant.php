@@ -274,7 +274,7 @@ if (isset($_GET["id"])) {
 																			<td><?php echo $el["prenom"]; ?></td>
 																			 <td><?php echo $el["email"]; ?></td>
 																			<td><?php echo $el["dateN"]; ?></td>
-																			<td><?php echo $el["id_class"]; ?></td>
+																			<td><?php echo $el["id"]; ?></td>
 																			<td><?php echo $el["cin"]; ?></td>
 																			<td><a href="?id=<?php echo $el["id"]; ?>"  class="label label-danger">Delete</a>
                                                                             <a href="updateEtudiant.php?id=<?php echo $el["id"]; ?>" class="label label-warning">Edit</a></td>

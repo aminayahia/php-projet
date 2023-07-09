@@ -1,14 +1,15 @@
-
 <?php
 include "../classes/Etudiant.php";
+include "../classes/ClassE.php";
 $e = new Etudiant();
 
-if(isset($_POST['add_Etudiant'])){
- $e->addEnseignant($_POST);
+if(isset($_POST['add_etudiant'])){
+	
+    $e->addEtudiant($_POST);
 }
 
+
 //Liste des class
-include "../classes/ClassE.php";
 $c = new ClassE();
 $listeC = $c->listClass();
 
@@ -220,41 +221,42 @@ $listeC = $c->listClass();
                         <div class="row">
                           <!-- statustic and process end -->
                           <div class="col-sm-12">
-                            <form method="post">
-                              <input type="hidden" name="id">
-                              <div class="input-group">
+                            <h3>Ajouter un etudiant </h3>
+                          <form class="md-float-material" method="post" action="">
+                         
+               
+                                <div class="input-group">
                                     <input type="text" class="form-control" id="nom"  name="nom" placeholder="nom">
                                     <span class="md-line"></span>
                                 </div>
-                              <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Prénom</label>
-                                <div class="col-sm-10">
-                                  <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Entrer prenom">
-                                </div>
-                              </div>
-                              <div class="input-group">
+                             <div class="input-group">
                                  
-                                 <label style="color:black">Genre:</label>
- 
-                                 <div>
-                                   <input type="radio" id="huey" name="genre" value="mr"
-                                          checked>
-                                   <label>Mr</label>
-                                 </div>
- 
- 
-                                 <div>
-                                   <input type="radio" id="louie" name="genre" value="mme">
-                                   <label>Mme</label>
-                                 </div>
- 
- 
-                                    
-                                 </div>
-                                 <div class="input-group">
+								<label style="color:black">Genre:</label>
+
+								<div>
+								  <input type="radio" id="huey" name="genre" value="mr"
+										 checked>
+								  <label>Mr</label>
+								</div>
+
+
+								<div>
+								  <input type="radio" id="louie" name="genre" value="mme">
+								  <label>Mme</label>
+								</div>
+
+
+								   
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Entrer prénom">
+                                    <span class="md-line"></span>
+                                </div>
+								   <div class="input-group">
                                  	<label>date de naissance :</label><input type="date"  id="dateN" name="dateN">
                                     <span class="md-line"></span>
                                 </div>
+
                                 <div class="input-group">
                                     <input type="text" class="form-control" id="cin" name="cin" placeholder="Entrer cin" >
                                     <span class="md-line"></span>
@@ -264,7 +266,8 @@ $listeC = $c->listClass();
                                     <input type="text" class="form-control" id="email" name="email" placeholder="Entrer eamil" >
                                     <span class="md-line"></span>
                                 </div>
-                                <div class="form-group row">
+                                 
+								       <div class="form-group row">
                                     
                                     <div class="col-sm-12">
 							
@@ -282,9 +285,14 @@ $listeC = $c->listClass();
                                     <input type="text" class="form-control" id="pw" name="pw" placeholder="Entrer mot de passe" >
                                     <span class="md-line"></span>
                                 </div>
-                       
-                              <button type="submit" name="add_etudiant" class="btn btn-primary btn-sm btn-round" type="submit">add_etudiant</button>
-                            </form>
+                                <div class="row m-t-30">
+                                    <div class="col-md-12">
+                                        <button type="submit" name="add_etudiant" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Sign up now.</button>
+                                    </div>
+                                </div>
+                          
+                         
+                        </form>
                           </div>
                         </div>
                       </div>
